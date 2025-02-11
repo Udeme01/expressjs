@@ -1,0 +1,24 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "working with expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "nodemon app.js"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs"
+  ],
+  "author": "Udeme Emmanuel",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}

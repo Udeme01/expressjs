@@ -1,12 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+// const { engine } = require("express-handlebars");
 
 const path = require("path");
 
 const app = express();
 
-app.set("view engine", "pug"); // view engine allows us to tell express that for every dynamic template we're trying to render, please use this engine registered here - in this case 'pug'.
+// app.engine(".handlebars", engine({ extname: ".handlebars" }));
 
+app.set("view engine", "ejs"); // view engine allows us to tell express that for every dynamic template we're trying to render, please use this engine registered here - in this case 'pug'.
 app.set("views", "templates"); // views allows us to tell express where to find this dynamic views - views acts more like a directory.
 
 // NB: now we're telling express that we wanna compile dynamic templates with the 'pug' engine and where to find these templates.
